@@ -1,0 +1,50 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>GetRegisterControl</servlet-name>
+  	<display-name>GetRegisterControl</display-name>
+  	<description></description>
+  	<servlet-class>register.GetRegisterControl</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>GetLoginController</servlet-name>
+  	<display-name>GetLoginController</display-name>
+  	<description></description>
+  	<servlet-class>login.GetLoginController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>GetForgotController</servlet-name>
+  	<display-name>GetForgotController</display-name>
+  	<description></description>
+  	<servlet-class>forgot.GetForgotController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>getUpdateController</servlet-name>
+  	<display-name>getUpdateController</display-name>
+  	<description></description>
+  	<servlet-class>forgot.getUpdateController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>GetRegisterControl</servlet-name>
+  	<url-pattern>/getRegister</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>GetLoginController</servlet-name>
+  	<url-pattern>/getLogin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>GetForgotController</servlet-name>
+  	<url-pattern>/getForgot</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>getUpdateController</servlet-name>
+  	<url-pattern>/getUpdate</url-pattern>
+  </servlet-mapping>
+ <welcome-file-list>  
+   <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
